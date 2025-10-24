@@ -2,7 +2,7 @@ import React from 'react';
 import { Shield, Award, Users, CreditCard } from 'lucide-react';
 import visaLogo from '../assets/visa.png';
 import masterCardLogo from '../assets/mastercard.png';
-import unionPayLogo from '../assets/unionpay.png';
+import unionPayLogo from '../assets/unionPay.png';
 import orangeMoneyLogo from '../assets/orangeMoney.png';
 import logoWave from '../assets/logoWave.png';
 import logoMtn from '../assets/MTN.jpg';

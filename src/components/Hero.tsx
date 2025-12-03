@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Check, ArrowRight } from 'lucide-react';
-import imageGateway from '../assets/cover.png';
+import imageGateway from '../assets/cover.webp';
 import bbsLogo from '../assets/bbs-logo.png';
 
 const Hero: React.FC = () => {

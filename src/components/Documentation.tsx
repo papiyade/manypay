@@ -11,7 +11,7 @@ import {
   Shield,
   Book,
   Zap,
-  Settings,
+  Settings
 } from "lucide-react";
 
 const Documentation = () => {
@@ -37,6 +37,7 @@ const Documentation = () => {
       apiBasics: "Bases de l'API",
       withdrawal: "Payout",
       transfer: "Transferts",
+      cashin: "Cashin/Collection",
       balance: "Consultation solde",
       copy: "Copier",
       copied: "Copié !",
@@ -57,6 +58,7 @@ const Documentation = () => {
       apiBasics: "API Basics",
       withdrawal: "Payout",
       transfer: "Transfers",
+      cashin: "Cashin/Collection",
       balance: "Balance Inquiry",
       copy: "Copy",
       copied: "Copied!",
@@ -97,6 +99,11 @@ const Documentation = () => {
         {
           id: "transfer",
           title: t.transfer,
+          icon: <Send className="w-4 h-4" />,
+        },
+        {
+          id: "cashin",
+          title: t.cashin,
           icon: <Send className="w-4 h-4" />,
         },
         {
@@ -215,33 +222,69 @@ const Documentation = () => {
                 />
               </div>
 
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Services disponibles
-                </h3>
-                <div className="bg-gray-50 rounded-lg p-4 mb-4">
-                  <ul className="space-y-2 text-sm">
-                    <li>
-                      <code className="bg-blue-100 text-[#AE3D7D] px-2 py-1 rounded">
-                        ciwave
-                      </code>{" "}
-                      - Wave Côte d'Ivoire
-                    </li>
-                    <li>
-                      <code className="bg-blue-100 text-[#AE3D7D] px-2 py-1 rounded">
-                        snwave
-                      </code>{" "}
-                      - Wave Sénégal
-                    </li>
-                    <li>
-                      <code className="bg-blue-100 text-[#AE3D7D] px-2 py-1 rounded">
-                        snom
-                      </code>{" "}
-                      - Orange Money Sénégal
-                    </li>
-                  </ul>
-                </div>
-              </div>
+<div>
+  <h3 className="text-xl font-bold text-gray-900 mb-4">
+    Services disponibles
+  </h3>
+  <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+    <table className="w-full">
+      <thead>
+        <tr className="bg-gradient-to-r from-gray-50 to-gray-100 border-b border-gray-200">
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Code Service
+          </th>
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Nom du Service
+          </th>
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Pays
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-gray-100">
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+            <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+              ciwave
+            </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+            Wave
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+            Côte d'Ivoire
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+            <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+              snwave
+            </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+            Wave
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+            Sénégal
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+            <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+              snom
+            </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+            Orange Money
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+            Sénégal
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
               <div className="bg-green-50 border border-green-200 rounded-xl p-6">
                 <h4 className="font-semibold text-green-900 mb-2">
@@ -285,33 +328,69 @@ const Documentation = () => {
                 />
               </div>
 
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Available Services
-                </h3>
-                <div className="bg-gray-50 rounded-lg p-4 mb-4">
-                  <ul className="space-y-2 text-sm">
-                    <li>
-                      <code className="bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                        ciwave
-                      </code>{" "}
-                      - Wave Ivory Coast
-                    </li>
-                    <li>
-                      <code className="bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                        snwave
-                      </code>{" "}
-                      - Wave Senegal
-                    </li>
-                    <li>
-                      <code className="bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                        snom
-                      </code>{" "}
-                      - Orange Money Senegal
-                    </li>
-                  </ul>
-                </div>
-              </div>
+<div>
+  <h3 className="text-xl font-bold text-gray-900 mb-4">
+    Available services
+  </h3>
+  <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+    <table className="w-full">
+      <thead>
+        <tr className="bg-gradient-to-r from-gray-50 to-gray-100 border-b border-gray-200">
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Service code
+          </th>
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Service name
+          </th>
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Country
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-gray-100">
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+            <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+              ciwave
+            </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+            Wave
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+            Ivory Coast
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+            <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+              snwave
+            </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+            Wave
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+            Senegal
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+            <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+              snom
+            </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+            Orange Money
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+            Senegal
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
               <div className="bg-green-50 border border-green-200 rounded-xl p-6">
                 <h4 className="font-semibold text-green-900 mb-2">
@@ -660,6 +739,415 @@ hash: 'the created hash'`}
           ),
         },
       },
+      cashin: {
+        fr: {
+          title: "Cashin/Collection",
+          content: (
+            <div className="space-y-6">
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#AE3D7D] mb-3">
+                  Cashin
+                </h3>
+                <p className="text-[#AE3D7D]">Le point de terminaison Cash-In(Collection) permet aux marchands de collecter des fonds depuis le portefeuille mobile, le compte bancaire ou le canal de paiement d'un client vers leur compte marchand. Cette opération est généralement utilisée  lorsqu'un client effectue un paiement pour des biens ou services, et que le marchand initie la demande de débit.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Endpoint
+                </h3>
+                <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                  <code className="text-sm font-mono text-gray-800">
+                    POST /cashin
+                  </code>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Headers
+                </h3>
+                <CodeBlock
+                  code={`Content-Type: application/json
+x-api-key: 'Votre clé API'
+hash: 'le hash calculé'`}
+                  language="http"
+                  id="payout-headers-fr"
+                />
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Corps de la requête
+                </h3>
+                <CodeBlock
+                  code={`{
+  "code_service": "snwave",
+  "montant": 100,
+  "external_id": "ngntest65",
+  "info_pay": {
+    "indicatif": "+221",
+    "numero": "77xxxxxxx",
+    "otp": "098654",
+    "nom": "magor"
+  }
+}`}
+                  language="json"
+                  id="payout-body-fr"
+                />
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                  Réponse de succès (200)
+                </h4>
+                <CodeBlock
+                  code={`{
+  "code": 200,
+  "etat": "PENDING",
+  "id": "ngntest87",
+  "info_pay": {
+    "indicatif": "+221",
+    "numero": "77xxxxxxx",
+    "otp": "098654",
+    "nom": "magor"
+  }
+}`}
+                  language="json"
+                  id="payout-success-fr"
+                />
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                  Réponse d'erreur (400)
+                </h4>
+                <CodeBlock
+                  code={`{
+  "code": 400,
+  "message": "the id ngntest87 is already used"
+}`}
+                  language="json"
+                  id="payout-error-fr"
+                />
+              </div>
+
+              <div>
+  <h3 className="text-xl font-bold text-gray-900 mb-4">
+    Services disponibles
+  </h3>
+  <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+    <table className="w-full">
+      <thead>
+        <tr className="bg-gradient-to-r from-gray-50 to-gray-100 border-b border-gray-200">
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Code Service
+          </th>
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Nom du Service
+          </th>
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Pays
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-gray-100">
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          ciom
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+        Orange Money
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+        Côte d'Ivoire
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          bfom
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+        Orange Money
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+        Burkina Faso
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          mlmoov
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+        Moov
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+        Mali
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          bjmtn
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">MTN</td>
+          <td className="px-6 py-4 text-sm text-gray-600">Bénin</td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          bjmoov
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">Moov</td>
+          <td className="px-6 py-4 text-sm text-gray-600">Bénin</td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          snfree
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">Free</td>
+          <td className="px-6 py-4 text-sm text-gray-600">Sénégal</td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          ugmtn
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">MTN</td>
+          <td className="px-6 py-4 text-sm text-gray-600">Ouganda</td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          ugairtel
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">Airtel</td>
+          <td className="px-6 py-4 text-sm text-gray-600">Ouganda</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+            </div>
+
+          ),
+        },
+        en: {
+          title: "Cashin/Collection",
+          content: (
+            <div className="space-y-6">
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#AE3D7D] mb-3">
+                  Cashin API
+                </h3>
+                <p className="text-[#AE3D7D]">The Cash-In (Collection) endpoint allows merchants to collect funds from a customer’s mobile wallet, bank account, or payment channel into their merchant account.
+This operation is typically used when a customer makes a payment for goods or services, and the merchant initiates the debit request.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Endpoint
+                </h3>
+                <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                  <code className="text-sm font-mono text-gray-800">
+                    POST /cashin
+                  </code>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Headers
+                </h3>
+                <CodeBlock
+                  code={`Content-Type: application/json
+x-api-key: 'your api key'
+hash: 'the created hash'`}
+                  language="http"
+                  id="payout-headers-en"
+                />
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Request Body
+                </h3>
+                <CodeBlock
+                  code={`{
+  "code_service": "snwave",
+  "montant": 100,
+  "external_id": "ngntest65",
+  "info_pay": {
+    "indicatif": "+221",
+    "numero": "77xxxxxxx",
+    "otp": "098654",
+    "nom": "magor"
+  }
+}`}
+                  language="json"
+                  id="payout-body-en"
+                />
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                  Success Response (200)
+                </h4>
+                <CodeBlock
+                  code={`{
+  "code": 200,
+  "etat": "PENDING",
+  "id": "ngntest87",
+  "info_pay": {
+    "indicatif": "+221",
+    "numero": "77xxxxxxx",
+    "otp": "098654",
+    "nom": "magor"
+  }
+}`}
+                  language="json"
+                  id="payout-success-en"
+                />
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                  Error Response (400)
+                </h4>
+                <CodeBlock
+                  code={`{
+  "code": 400,
+  "message": "the id ngntest87 is already used"
+}`}
+                  language="json"
+                  id="payout-error-en"
+                />
+              </div>
+              <div>
+  <h3 className="text-xl font-bold text-gray-900 mb-4">
+    Available services
+  </h3>
+  <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+    <table className="w-full">
+      <thead>
+        <tr className="bg-gradient-to-r from-gray-50 to-gray-100 border-b border-gray-200">
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Service code
+          </th>
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Service name
+          </th>
+          <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+            Country
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-gray-100">
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          ciom
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+        Orange Money
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+        Ivory Coast
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          bfom
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+        Orange Money
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+        Burkina Faso
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          mlmoov
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+        Moov
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-600">
+        Mali
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          bjmtn
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">MTN</td>
+          <td className="px-6 py-4 text-sm text-gray-600">Benin</td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          bjmoov
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">Moov</td>
+          <td className="px-6 py-4 text-sm text-gray-600">Benin</td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          snfree
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">Free</td>
+          <td className="px-6 py-4 text-sm text-gray-600">Senegal</td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          ugmtn
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">MTN</td>
+          <td className="px-6 py-4 text-sm text-gray-600">Uganda</td>
+        </tr>
+        <tr className="hover:bg-gray-50 transition-colors duration-150">
+          <td className="px-6 py-4">
+        <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+          ugairtel
+        </code>
+          </td>
+          <td className="px-6 py-4 text-sm text-gray-900 font-medium">Airtel</td>
+          <td className="px-6 py-4 text-sm text-gray-600">Uganda</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+            </div>
+          ),
+        },
+      },
       webhooks: {
         fr: {
           title: "Callbacks (Webhooks)",
@@ -809,7 +1297,7 @@ let hash = hmac.digest('base64');`}
       return (
         <div className="text-center py-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Section en cours de développement
+            Section non disponible
           </h2>
           <p className="text-gray-600">
             Cette section sera bientôt disponible.

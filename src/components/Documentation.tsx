@@ -975,7 +975,7 @@ hash: 'le hash calculé'`}
                           Cameroun
                         </td>
                       </tr>
-                                            <tr className="hover:bg-gray-50 transition-colors duration-150">
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
                         <td className="px-6 py-4">
                           <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
                             cmmtn
@@ -1213,6 +1213,32 @@ hash: 'the created hash'`}
                         </td>
                         <td className="px-6 py-4 text-sm text-gray-600">
                           Uganda
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            cmom
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Orange Money
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Cameroon
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            cmmtn
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          MTN
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Cameroon
                         </td>
                       </tr>
                     </tbody>

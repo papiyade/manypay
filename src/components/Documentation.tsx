@@ -281,6 +281,136 @@ const Documentation = () => {
                           Sénégal
                         </td>
                       </tr>
+                                            <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            ciom
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Orange Money
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Côte d'Ivoire
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            bfom
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Orange Money
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Burkina Faso
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            mlmoov
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Moov
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Mali
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            bjmtn
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          MTN
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Bénin
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            bjmoov
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Moov
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Bénin
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            snfree
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Free
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Sénégal
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            ugmtn
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          MTN
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Ouganda
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            ugairtel
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Airtel
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Ouganda
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            cmom
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Orange Money
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Cameroun
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            cmmtn
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          MTN
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Cameroun
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -385,6 +515,136 @@ const Documentation = () => {
                         </td>
                         <td className="px-6 py-4 text-sm text-gray-600">
                           Senegal
+                        </td>
+                      </tr>
+                                            <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            ciom
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Orange Money
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Ivory Coast
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            bfom
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Orange Money
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Burkina Faso
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            mlmoov
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Moov
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Mali
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            bjmtn
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          MTN
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Benin
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            bjmoov
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Moov
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Benin
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            snfree
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Free
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Senegal
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            ugmtn
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          MTN
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Uganda
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            ugairtel
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Airtel
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Uganda
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            cmom
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          Orange Money
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Cameroon
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-150">
+                        <td className="px-6 py-4">
+                          <code className="bg-purple-50 text-[#AE3D7D] px-3 py-1.5 rounded-md font-mono text-sm font-medium">
+                            cmmtn
+                          </code>
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                          MTN
+                        </td>
+                        <td className="px-6 py-4 text-sm text-gray-600">
+                          Cameroon
                         </td>
                       </tr>
                     </tbody>
